@@ -1,0 +1,209 @@
+
+
+
+
+#main-banner .mb .mb-txt{position: absolute; top: 25%; z-index: 99; padding: 0 15%;}
+#main-banner .mb-txt {color: #fff; font-weight: 500; text-shadow: #000 1px 1px 1px;}
+#main-banner .mb-txt h2{color:#fff; font-size: 35px;}
+#main-banner .mb-txt h2 + p{margin: 40px 0 20px 0;}
+#main-banner .mb-txt .bnt-more{display: inline-block; border: 2px solid #fff; padding: 10px 20px; margin-top: 30px; transition: color 1s; border-radius: 10px;
+transform: scale(1.2);}
+#main-banner .mb-txt .bnt-more a{color: #fff; transition: color 1s;}
+#main-banner .mb-txt .bnt-more:hover a{color: #000;}
+#main-banner .mb-txt .bnt-more:hover{background-color: #fff;}
+
+#main-banner .mb li.mb2 .mb-txt{right: 0; text-align: right;}
+
+#main-banner{margin: 0 !important;}
+
+/*main-banner의 li에 높이값 부여*/
+
+#main-banner .mb li{display: flex; align-items: center;}
+#main-banner .mb li video{width: 100%; height: 100vh; object-fit: cover; filter: brightness(80%);}
+
+#main-banner .swiper-button-prev,
+#main-banner .swiper-button-next{display: none;}
+
+/*메인베너 정지*/
+
+#main-banner .mb-play span,
+#main-banner .mb-pause span{position: absolute; left: 50%; bottom: 43px; transform: translateX(30px); z-index: 99; cursor: pointer; font-size: 4rem;}
+
+#main-banner .mb-txt{margin-top: 80px; }
+
+#main-banner .mb1 .bnt-more{margin-left: 15px;}
+#main-banner .mb2 .bnt-more{margin-right: 15px;}
+#main-banner .mb3 .bnt-more{margin-left: 15px;}
+#main-banner .mb4 .bnt-more{margin-top: 40px; margin-left: 15px;}
+
+/*notice*/
+#notice{margin: 80px 0 70px !important; text-align: center;}
+#notice h2{display: none;}
+.notice-view{width: 400px; height: 60px;line-height: 60px; background-color: #F2F2F2;border-radius: 10px; overflow: hidden;
+transform: scale(0.9);}
+#notice .inner ul li a span{display: inline-block; margin-right: 20px;}
+#notice .inner ul li a .title{color: red; font-weight: bold;}
+#notice .inner ul li a .mid,
+#notice .inner ul li a .date{color: #7B7B7B;}
+#notice .inner ul li a .date{display: none;}
+
+/*img-banner*/
+#img-banner{text-align: center;}
+#img-banner .inner{display: flex; width: 100%; justify-content: space-between; align-items: center; background-color:#EDF5EA;}
+#img-banner .inner .img-left{line-height: 1.5; padding-left: 40px; font-size: 2rem;}
+#img-banner .inner .img-left .img-txt{font-size: 1.3rem;}
+#img-banner .inner .img-left .img-txt2{font-size: 1.4rem;}
+#img-banner .inner .img-right{width: 40%;}
+#img-banner .inner .img-left span{color: #2F67D0; margin-right: 5px;}
+#img-banner .inner .img-left .img-txt3{font-weight: bold;}
+#img-banner .inner img{width: 100%; height: 100%;}
+#img-banner h2{display: none;}
+#img-banner .inner .img-left .img-txt,
+#img-banner .inner .img-left .img-txt2{display: none;}
+
+/*event*/
+#event{text-align: center; margin-top: 100px; }
+#event h1::before{content: "참여하고 혜택받는"; font-size: 1.3rem; font-weight: 500; display: block;}
+#event h1{font-size: 3rem;}
+#event h1 span{color: #7BB988; margin-left: 5px;}
+#event .event-title h1{display: inline-block; position: relative;}
+#event .event-title h1::after{content: ""; display: block; width: 70px; height: 70px; background: url(../img/icon_wind.png) no-repeat center / contain; position: absolute; top: -38px; left: -35px; transform: scale(0.8);} 
+
+#event .inner{position: relative;}
+
+#event .inner .event-img{position: absolute; left: 40%; top: -13px;}
+#event .inner .event-img img{width: 70px; height: auto; }
+
+#event .event-list{margin: 100px 0 100px; justify-content: space-between;padding: 25px 0;}
+#event .event-list img{width: 100%; border-radius: 10%;}
+#event .event-txt{margin-top: 20px;}
+#event .event-date{font-size: 1.4rem; margin-top: 5px;}
+#event .event-txt span{font-weight: bold;}
+#event .event-txt{display: none;}
+
+#event .swiper-scrollbar{display: none;}
+
+/*main-visual*/
+
+#main-visual{margin: 50px 0;}
+#main-visual .mv-img{width: 100%; height: 800px; background: url(../img/main-banner.jpg) no-repeat center center / cover;}
+#main-visual {text-align: center;}
+#main-visual .mv-txt{ padding: 120px 0;}
+#main-visual .mv-txt h1{font-size: 3.8rem;}
+#main-visual .mv-txt h1::before{content: "sobock - travel"; font-size: 2rem; display: block;}
+#main-visual .mv-txt span{margin: 20px 0; display: block; font-weight: 600;}
+#main-visual .mv-txt .mv-s2{margin: 40px 0;}
+#main-visual .mv-txt2 ul{line-height: 2; text-align: center; }
+#main-visual .mv-txt2 ul li{display: inline-block; padding: 0 10px; background-color:#9FB93E ; border-radius: 30px; color: #fff; margin: 0 5px; font-weight: 400; font-size: 1.3rem; }
+#main-visual .mv-txt2 .mv-txt2-2{margin-top: 10px;}
+
+
+/*best*/
+#best{text-align: center;}
+#best h1 span{color: #9FB93E;}
+
+
+/*tip*/
+
+
+#tip1{text-align: center; margin-top: 50px; margin-bottom: 120px;}
+#tip1 h1{color: #7BB988; font-size: 3.8rem; font-weight: bold;}
+#tip1 > p::before{content: "여행 지역부터 고르기가 힘든 당신께"; font-size: 1.3rem; display: block;}
+#tip1 > p{font-size: 2.6rem; font-weight: bold;}
+
+#tip1 .img-box{padding: 0 20px;}
+
+
+
+#tip1 ul{display: flex; justify-content: space-between; flex-wrap: wrap;
+margin-top: 30px; gap: 20px;}
+#tip1 ul li{width: calc((100% - 20px) / 2);}
+/* #tip1 ul li:nth-child(1), #tip1 ul li:nth-child(2){margin-bottom: 20px;} */
+
+#tip1 ul .imgbx-a{width: 200px; height: 160px; background: url(../img/tip_img1.jpeg) no-repeat center center / cover; border-radius: 10px;}
+#tip1 ul .imgbx-b{width: 200px; height: 160px; background: url(../img/tip_img2.jpg) no-repeat center center / cover; border-radius: 10px;}
+#tip1 ul .imgbx-c{width: 200px; height: 160px; background: url(../img/tip_img3.jpg) no-repeat center center / cover; border-radius: 10px;}
+#tip1 ul .imgbx-d{width: 200px; height: 160px; background: url(../img/tip_img4.jpg) no-repeat center center / cover; border-radius: 10px;}
+
+#tip1 .img-txt{margin-top: 20px;}
+
+
+#tip1 ul li .img-txt > span{font-size: 1.8rem; font-weight: bold;}
+#tip1 ul li .img-txt > p{font-size: 1.3rem;}
+
+#tip1 .button{border: solid #7B7B7B 2px; border-radius: 30px; width: 110px; height: 37px; padding: 0 15px; position: relative; margin: 20px auto 0;}
+#tip1 .button p{font-size: 1.5rem; line-height: 37px; position: relative;}
+
+#tip1 .button .more{color: #7B7B7B;}
+#tip1 .button .add{position: absolute; top: 50%; right:-3px; transform: translateY(-50%);}
+
+
+/*about-bn*/
+
+
+#about-bn{height: 250px; width: 100%; background-color: #EDF5EA;
+text-align: left; padding: 50px 0 0 50px; position: relative; }
+#about-bn .about-bn-wrap{display: flex; justify-content: space-between;}
+#about-bn .bn-button{padding: 10px 18px 10px 20px; border: solid 2px #9FB93E;
+width: 100px; height: 30px; font-size: 1.2rem; margin: 0 auto; border-radius: 30px; line-height: 0.9; transform: scale(1.2); position: absolute; top: 180px; left: 60px;}
+#about-bn .bn-button a{color: #9FB93E; font-weight: 500;}
+#about-bn img{height: 100%; width: 150px ;padding-bottom: 30px;}
+
+/*tip2*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*pc*/
+
+@media screen and (min-width : 1200px){
+  #main-banner .mb-txt{position: absolute; top: 36%; z-index: 99; padding: 0 10%;}
+  #main-banner .mb-txt h2{font-size: 45px;}
+  #main-banner .mb-txt .bnt-more{transform: scale(1);}
+  #main-banner .mb-txt p{font-size: 20px;}
+  #main-banner .mb li video{width: 100%; height: 1000px; object-fit: cover;}
+  #main-banner .mb-txt p{display: block;}
+  #main-banner .mb .bnt-more{transform: scale(1.2);}
+  #main-banner .swiper-button-prev,
+#main-banner .swiper-button-next{display: block;}
+
+/*notice*/
+
+#notice{transform: scale(1.3);}
+#notice .inner ul li a .date{display: block;}
+.notice-view{width: 700px;}
+#notice .inner ul li{width: 100%;}
+#notice .inner ul li a{display: flex; justify-content: center;}
+
+#event{margin-bottom: 100px;}
+#event .event-title{margin: 100px 0;}
+#event .event-txt{display: block; font-size: 2.5rem;}
+#event .event-date{font-size: 2rem;}
+
+#event h1::before{font-size: 2rem;}
+#event h1{font-size: 4.5rem;}
+
+
+#tip1 .img-box{display: none;}
+.tip1-pc img{width: 100%;}
+
+
+#main-visual .mv-img{width: 100% ;height: 2500px; }
+#main-visual .mv-txt{transform: scale(2); padding-top: 500px;}
+
+#event .event-title h1::after{transform: scale(1);}
+}

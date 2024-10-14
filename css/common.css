@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+
+/* 공통 */
+#wrap{min-width: 320px; }
+.inner{max-width: 1700px; padding: 0.5%; margin: 0 auto;}
+
+
+/*********모바일**********/
+
+
+.popup{background-color: #9FB93E; text-align: center; padding: 9px; width: 100%; position: fixed; z-index: 9;}
+.popup a{color: #fff;}
+.popup-close{cursor: pointer; color: #fff; position: absolute; top: 50%; right: 10px; transform: translateY(-50%);}
+
+/*header*/
+
+header{position: fixed; width: 100%; background-color: #fff; z-index: 999; top: 40px;}
+header .inner .gnb{display: none; width: 100%;}
+header.fixed{top: 0;}
+
+header .inner{position: relative; padding: 0 30px; }
+header .gnb > li{padding-top: 10px;}
+
+header .gnb{display: flex; justify-content: space-between; gap: 90px;}
+header .gnb li::before{content: ""; display: block; width: 10px; height: 10px; background-color: #9FB93E; border-radius: 50%; position: absolute; left: 50%; top: -10px; transform: translateX(-10%); opacity: 0; transition: opacity 0.5s, top 0.2s;}
+
+  header .gnb > li:hover:before{opacity: 1; top: 0;}
+
+header .gnb > li > a{font-size: 2rem; font-weight: 600;}
+header .gnb .depth2{position: absolute; top: 60px; left: 50%; transform: translateX(-50%); width: 200px; z-index: 99; text-align: center; background-color: #fff; padding: 20px; border-radius: 10px;}
+
+header .gnb .depth2 > li{margin-bottom: 10px;}
+header .gnb .depth2 > li a{ font-size: 1.6rem; transition: color 0.5s;
+font-weight: 400; color: #1E1E1E;}
+header .gnb .depth2 > li:hover a{color: #9FB93E;}
+header .inner .btn-box{display: none; justify-content: space-between; gap: 50px; align-items: center;}
+
+header .inner .gnb-login{background-color: #9FB93E; display: block; padding: 10px 30px; border-radius: 30px;}
+header .inner .gnb-login a{color: #fff;}
+header .inner .gnb-search{transform: scale(1.7);}
+header .inner .gnb-search span{color: #9FB93E; line-height: 2;}
+
+
+
+
+
+header .inner{display: flex; justify-content: space-between; align-items: flex-end; max-width: 100%; align-items: center;}
+
+
+header h1 img{width: 100%; height: 100px; transform: scale(0.7); display: block;}
+
+header .mgnb-wrap{position: fixed; top: 0; left: 100%; width: 100%; height: 100%; background-color: #fff; padding: 130px 30px 20px 65px; z-index: 999;}
+
+header .mgnb-ham{position: absolute; top: 35px; right: 30px; cursor: pointer; transform: scale(1.8);}
+header .mgnb-ham span{color: #9FB93E;}
+
+/*헤더 고정*/
+
+header .mgnb-wrap .mgnb{width: 100%;}
+header .mgnb-wrap .mgnb > li{padding: 15px 0 15px 0; border-bottom: 1px solid #9FB93E; font-size: 2rem;}
+header .mgnb-wrap .mgnb > li a{color: #546808;}
+/*.mgnb의 자식 li의 패딩값 15 0 10*/
+
+
+header .mgnb-wrap .mgnb > li > a{font-weight: 600;}
+header .mgnb-wrap .mgnb ul li a{font-size: 1.5rem; color:#BFBFBF; opacity: 0.7; transition: 0.5s;}
+header .mgnb-wrap .mgnb ul li:hover a{color: #9FB93E; opacity: 1;}
+.mdepth2{padding: 10px 0 0 60px;}
+.mdepth2 > li{position: relative;}
+header .mgnb h1 img{width: 200px; height: 100px; position: absolute; top: 5px; left: 30px;
+  transform: scale(0.7);}
+
+header .mgnb-wrap .mgnb-ham span{color: #9FB93E;}
+
+header .mgnb-wrap .mgnb-close{position: absolute; top: 40px; right: 5%; cursor: pointer;}
+header .mgnb-wrap .mgnb-close span{color: #9FB93E; transform: scale(1.7);}
+
+
+
+/***pc****/
+
+@media screen and (min-width : 1200px){
+  
+  header .mgnb-ham{display: none;}
+  header .inner .gnb{display: flex;}
+  header .inner .gnb li{position: relative;}
+  header .inner .gnb-search{display: block;}
+  header .inner .btn-box{display: flex; align-items: center;}
+
+}
